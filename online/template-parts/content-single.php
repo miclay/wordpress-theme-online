@@ -21,6 +21,8 @@
 
 	<div class="entry-content clearfix">
 
+		<?=function_exists('thumbs_rating_getlink') ? thumbs_rating_getlink() : ''?>
+
 		<?php the_content(); ?>
 
 		<?php wp_link_pages( array(

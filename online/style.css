@@ -685,7 +685,7 @@ textarea {
 --------------------------------------------------------------*/
 .site-header {
 	border-bottom: 1px solid #ddd;
-	background: #fff;
+	background: #efefef;
 }
 
 .site-branding {
@@ -978,14 +978,13 @@ textarea {
 }
 
 .widget-header {
-	margin: 0 0 1.5em 0;
+	margin: 0 0 1.5em 0; border-bottom:solid 1px #e5e5e5; padding-bottom:5px;
 }
 
 .widget-title {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	border-bottom: 4px solid #eee;
 	color: #404040;
 	text-transform: uppercase;
 	font-weight: bold;
@@ -1319,6 +1318,12 @@ textarea {
 .entry-content {
 	font-size: 17px;
 	font-size: 1.0625rem;
+	position:relative;
+}
+
+.entry-content .thumbs-rating-container{
+	right: 0;
+  top: -40px;
 }
 
 /* Read more Link */
@@ -2506,4 +2511,65 @@ object {
 		display: block !important;
 	}
 
+}
+
+
+
+
+
+
+body{font-family:microsoft yahei;}
+.ui-center{text-align:center;}
+.mod-pictext .pic{display:block; margin:0 auto;}
+.mod-pictext .tit{font-size:16px; font-weight:bold; color:#333;}
+.mod-pictext .sub{font-size:16px; color:#333;}
+.mod-pictext .desc{color:#959595; font-size:13px;}
+.mod-pictext .desc a{color:#414141; text-decoration:underline;}
+
+.widget_listcategorypostswidget .more-items{
+	  display: block;
+    background: #fafafa;
+    height: 50px;
+    color: #666;
+    text-align: center;
+    font-size: 14px;
+    line-height: 50px;
+    border: solid 1px #e5e5e5;
+}
+.widget ul.widget-post-list{padding:0;overflow:hidden;margin-top:-25px;}
+.widget-post-list li{position:relative;list-style-type:none;border-top:solid 1px #e5e5e5; margin-bottom:30px; margin-top:-1px; padding-top:30px;}
+.widget-post-list .post-info{}
+.widget-post-list .photo img{float:left; border:solid 1px #eee; margin-right:10px;}
+.widget-post-list .tit,
+.widget-post-list .tit a{color:#333;}
+.widget-post-list .author{color:#666; font-size:12px;}
+.widget-post-list .time{color:#999; font-size:12px;}
+.widget-post-list p{margin-bottom:1em;font-size:14px;}
+.widget-post-list p a{text-decoration:underline; color:#333;}
+
+.thumbs-rating-container {position:absolute; right:10px; top:25px;}
+.thumbs-rating-container .thumbs-rating-up,
+.thumbs-rating-container .thumbs-rating-up:hover{
+    background: url(https://img.alicdn.com/tps/TB16gpRNVXXXXaCXXXXXXXXXXXX-16-16.png) 0 center no-repeat;
+    color: #999;
+    font-size: 12px;
+    padding-left: 20px;
+}
+.thumbs-rating-container .thumbs-rating-down,
+.thumbs-rating-container .thumbs-rating-already-voted{display:none!important;}
+
+.post-slider{}
+.post-slider .slide-post{
+	background:rgba(0,0,0,0.5)!important; width:40%!important; left:1.5rem!important; bottom:1.5rem!important;
+}
+.post-slider .slide-post .entry-title{
+	font-size:1.5rem!important;
+}
+.post-slider .slide-post p{
+	font-size:13px; padding:0; margin:0; color:#eee;
+}
+.post-slider .slide-post a.more-link{
+	display:block; background:#418ed6; color:#eee; font-size:13px; 
+	width:100px; height:36px; text-align:center; line-height:36px;
+	border-radius:3px; margin-top:10px; font-family:microsoft yahei;
 }
