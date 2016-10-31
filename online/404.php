@@ -14,24 +14,14 @@ get_header(); ?>
 			
 				<header class="entry-header">
 		
-					<h1 class="page-title"><?php esc_html_e( '404: Page not found', 'poseidon' ); ?></h1>
+					<h1 class="page-title">该页面不存在</h1>
 					
 				</header><!-- .entry-header -->
 				
 				<div class="entry-content clearfix">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try a search or one of the links below?', 'poseidon' ); ?></p>
+					<p>可以尝试搜索其他关键词：</p>
 					
 					<?php get_search_form(); ?>
-
-					<?php the_widget( 'WP_Widget_Recent_Posts' ); ?>
-
-					<?php the_widget( 'WP_Widget_Archives', 'dropdown=1' ); ?>
-					
-					<?php the_widget( 'WP_Widget_Categories', 'dropdown=1' ); ?>
-
-					<?php the_widget( 'WP_Widget_Tag_Cloud' ); ?>
-					
-					<?php the_widget( 'WP_Widget_Pages' ); ?>
 
 				</div>
 				

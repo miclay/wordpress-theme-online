@@ -651,13 +651,13 @@ textarea {
 
 .container {
 	margin: 0 auto;
-	padding: 0 2em;
+	padding: 0 4em;
 	max-width: 1280px;
 	width: 100%;
 }
 
 .site-content {
-	padding-top: 3em;
+	padding-top: 1.5em;
 	background: #fff;
 }
 
@@ -665,12 +665,12 @@ textarea {
 	float: left;
 	box-sizing: border-box;
 	padding-right: 4em;
-	width: 70%;
+	width: 75%;
 }
 
 .sidebar {
 	float: right;
-	width: 30%;
+	width: 25%;
 }
 
 /* Fullwidth Template */
@@ -712,7 +712,6 @@ textarea {
 	font-weight: bold;
 	font-size: 38px;
 	font-size: 2.375rem;
-	font-family: 'Raleway', sans-serif;
 }
 
 .site-title a:link,
@@ -758,7 +757,7 @@ textarea {
 ## 10.1 - Main Navigation
 --------------------------------------------------------------*/
 .primary-navigation {
-	float: right;
+	float: left;
 	margin: 1em 0;
 }
 
@@ -781,13 +780,12 @@ textarea {
 
 .main-navigation-menu a {
 	display: block;
-	padding: 1.2em;
+	padding: 1.2em 25px;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 200;
 	font-size: 15px;
 	font-size: 0.9375rem;
-	font-family: 'Raleway', Tahoma, Arial;
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 }
@@ -824,7 +822,6 @@ textarea {
 	margin: 0;
 	padding: 0;
 	border: 1px solid #ddd;
-	border-top: 4px solid #404040;
 	background: #fff;
 	list-style-position: outside;
 	list-style-type: none;
@@ -837,8 +834,7 @@ textarea {
 
 .main-navigation-menu ul a {
 	padding: 1em;
-	min-width: 250px;
-	min-width: 16rem;
+	min-width: 10rem;
 	border-bottom: 1px dotted #ccc;
 	font-size: 13px;
 	font-size: 0.8125rem;
@@ -987,10 +983,9 @@ textarea {
 	padding: 0;
 	color: #404040;
 	text-transform: uppercase;
-	font-weight: bold;
+	font-weight: 200;
 	font-size: 18px;
-	font-size: 1.125rem;
-	font-family: 'Raleway', Tahoma, Arial;
+	font-size: 15px;
 }
 
 .widget ul {
@@ -1137,8 +1132,7 @@ textarea {
 }
 
 .widget-magazine-posts .type-post .entry-content {
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 14px;
 }
 
 .widget-magazine-posts .type-post .entry-content p {
@@ -1165,6 +1159,7 @@ textarea {
 .widget-magazine-posts .medium-post .entry-title {
 	font-size: 16px;
 	font-size: 1rem;
+	width:100%;
 }
 
 .widget-magazine-posts .small-post {
@@ -1235,7 +1230,7 @@ textarea {
 .widget-magazine-posts-grid .magazine-posts-grid-row .large-post {
 	float: left;
 	box-sizing: border-box;
-	padding-right: 2em;
+	padding-right: 3em;
 	width: 50%;
 }
 
@@ -1284,18 +1279,49 @@ textarea {
 	max-width: 100%;
 }
 
+.entry-header{
+  padding-bottom: 5px;
+  margin-bottom:10px;
+}
+
+.page .entry-header{
+	border-bottom: solid 1px #e5e5e5;
+}
+.magazine-posts-grid-row .page .entry-header{
+	border-bottom: none;
+}
+
+.type-post{
+  border-bottom: solid 1px #e5e5e5;
+  margin-bottom: 1.5em;
+}
+.type-post:nth-last-child(1){
+	border-bottom:none;
+}
+.type-post .entry-title{
+	font-size:18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.type-page p,
+.type-post p{
+	line-height:2;
+}
+
+.entry-excerpt .more-link{
+	color:#666; text-decoration:underline;
+}
+
 .page-title,
 .entry-title {
-	display: inline;
+	display: inline-block;
 	margin: 0;
-	padding: 0;
 	color: #404040;
 	-ms-word-wrap: break-word;
 	word-wrap: break-word;
-	font-weight: bold;
-	font-size: 40px;
-	font-size: 2.5rem;
-	font-family: 'Raleway', sans-serif;
+	font-weight: 200;
+	font-size: 15px;
 }
 
 .entry-title a:link,
@@ -1311,19 +1337,26 @@ textarea {
 	color: #22aadd;
 }
 
-.type-post .wp-post-image {
-	margin: 0 0 0.5em;
+.post-thumbnail-small .wp-post-image{
+	float:left;
+	width:25%;
+	padding: 0 1.5em 1.5em 0;
+}
+
+.type-post .entry-excerpt p{
+	margin-bottom: 1em;
+  margin-top: 0;
+  color: #999;
 }
 
 .entry-content {
-	font-size: 17px;
-	font-size: 1.0625rem;
+	font-size: 14px;
 	position:relative;
 }
 
 .entry-content .thumbs-rating-container{
 	right: 0;
-  top: -40px;
+  top: -84px;
 }
 
 /* Read more Link */
@@ -1343,24 +1376,22 @@ textarea {
 
 /* Small Post Layout */
 .post-layout-small .content-area .type-post .wp-post-image {
-	float: left;
-	margin: 0 1.5em 1.5em 0;
-	padding: 0.3em 0 0;
-	max-width: 40%;
+	
+}
+.post-layout-small .content-area .type-post .entry-header{
+	
 }
 
 .post-layout-small .content-area .type-post .entry-title {
-	font-size: 28px;
-	font-size: 1.75rem;
+	font-size: 18px;
 }
 
 .post-layout-small .content-area .type-post .entry-content {
-	font-size: 16px;
-	font-size: 1rem;
+	font-size: 14px;
 }
 
 .post-layout-small .content-area .type-post .entry-excerpt p {
-	margin-bottom: 1em;
+	margin-bottom: 1em; margin-top:0; color:#999;
 }
 
 /* Page Links | wp_link_pages() */
@@ -1446,6 +1477,13 @@ textarea {
 	border-bottom: 1px solid #ddd;
 }
 
+.post-navigation .nav-links{
+	font-size:12px;
+}
+.post-navigation .nav-links a{
+	color:#999;
+}
+
 .post-navigation .nav-links .nav-previous {
 	float: left;
 }
@@ -1466,9 +1504,7 @@ textarea {
 
 /* Theme Pagination */
 .post-pagination {
-	display: inline-block;
-	margin: 0 0 3em;
-	border-top: 4px solid #eee;
+	margin: -1.5em 0 3em;
 }
 
 .post-pagination a,
@@ -1519,19 +1555,18 @@ textarea {
 /* Archives and Search Heading */
 .page-header {
 	margin: 0 0 1.5em 0;
+	border-bottom: solid 1px #e5e5e5;
+  padding-bottom: 5px;
 }
 
 .page-header .archive-title {
 	display: inline-block;
 	margin: 0;
 	padding: 0;
-	border-bottom: 4px solid #eee;
 	color: #404040;
 	text-transform: uppercase;
-	font-weight: bold;
-	font-size: 18px;
-	font-size: 1.125rem;
-	font-family: 'Raleway', Tahoma, Arial;
+	font-weight: 200;
+	font-size: 15px;
 }
 
 .archive-description {
@@ -1843,11 +1878,11 @@ object {
 --------------------------------------------------------------*/
 @media only screen and (max-width: 80em) {
 	.site-content {
-		padding-top: 2em;
+		padding-top: 1em;
 	}
 
 	.content-area {
-		padding-right: 3em;
+		padding-right: 5em;
 	}
 
 }
@@ -1861,13 +1896,11 @@ object {
 
 	.page-title,
 	.entry-title {
-		font-size: 36px;
-		font-size: 2.25rem;
+		font-size: 35px;
 	}
 
 	.post-layout-small .content-area .type-post .entry-title {
-		font-size: 26px;
-		font-size: 1.625rem;
+		font-size: 18px;
 	}
 
 }
@@ -1919,13 +1952,11 @@ object {
 @media only screen and (max-width: 60em) {
 	.page-title,
 	.entry-title {
-		font-size: 32px;
-		font-size: 2rem;
+		font-size: 15px;
 	}
 
 	.post-layout-small .content-area .type-post .entry-title {
-		font-size: 24px;
-		font-size: 1.5rem;
+		font-size: 18px;
 	}
 
 	/*** Mobile Main Navigation ***/
@@ -1970,7 +2001,6 @@ object {
 	.main-navigation-toggle {
 		display: inline-block;
 		float: right;
-		margin: 1em 0;
 		padding: 1em;
 		background: none;
 	}
@@ -2012,7 +2042,7 @@ object {
 	.main-navigation-menu a {
 		display: block;
 		clear: left;
-		padding: 1.2em;
+		padding: 1.2em 25px;
 		border-bottom: 1px dotted #ccc;
 		font-size: 15px;
 		font-size: 0.9375rem;
@@ -2204,13 +2234,11 @@ object {
 @media only screen and (max-width: 40em) {
 	.page-title,
 	.entry-title {
-		font-size: 28px;
-		font-size: 1.75rem;
+		font-size: 15px;
 	}
 
 	.post-layout-small .content-area .type-post .entry-title {
-		font-size: 22px;
-		font-size: 1.375rem;
+		font-size: 18px;
 	}
 
 	.entry-content {
@@ -2328,13 +2356,11 @@ object {
 
 	.page-title,
 	.entry-title {
-		font-size: 24px;
-		font-size: 1.5rem;
+		font-size: 15px;
 	}
 
 	.post-layout-small .content-area .type-post .entry-title {
-		font-size: 20px;
-		font-size: 1.25rem;
+		font-size: 18px;
 	}
 
 	.alignright, .alignleft {
@@ -2410,8 +2436,7 @@ object {
 
 	.page-title,
 	.entry-title {
-		font-size: 20px;
-		font-size: 1.25rem;
+		font-size: 15px;
 	}
 
 	.entry-meta span {
@@ -2521,10 +2546,15 @@ object {
 body{font-family:microsoft yahei;}
 .ui-center{text-align:center;}
 .mod-pictext .pic{display:block; margin:0 auto;}
-.mod-pictext .tit{font-size:16px; font-weight:bold; color:#333;}
-.mod-pictext .sub{font-size:16px; color:#333;}
-.mod-pictext .desc{color:#959595; font-size:13px;}
+.mod-pictext .tit{font-size:13px; font-weight:200; color:#333;}
+.mod-pictext .sub{font-size:14px; color:#333; margin-top: 5px;}
+.mod-pictext .desc{color:#959595; font-size:13px; margin-top:7px; line-height:22px; clear:both;}
 .mod-pictext .desc a{color:#414141; text-decoration:underline;}
+.mod-pictext .lrmod{text-align:left;}
+.mod-pictext .lrmod .pic{float:left;width:70px; margin-right:10px; margin-bottom:10px;}
+.mod-pictext .lrmod .sub{display:inline-block;margin-top:12px;}
+.mod-pictext .lrmod .desc{clear:none;}
+.mod-pictext .lrmod .clearboth{clear:both;}
 
 .widget_listcategorypostswidget .more-items{
 	  display: block;
@@ -2544,7 +2574,7 @@ body{font-family:microsoft yahei;}
 .widget-post-list .tit a{color:#333;}
 .widget-post-list .author{color:#666; font-size:12px;}
 .widget-post-list .time{color:#999; font-size:12px;}
-.widget-post-list p{margin-bottom:1em;font-size:14px;}
+.widget-post-list p{margin-bottom:1em;font-size:14px; line-height:22px;}
 .widget-post-list p a{text-decoration:underline; color:#333;}
 
 .thumbs-rating-container {position:absolute; right:10px; top:25px;}
@@ -2560,16 +2590,64 @@ body{font-family:microsoft yahei;}
 
 .post-slider{}
 .post-slider .slide-post{
-	background:rgba(0,0,0,0.5)!important; width:40%!important; left:1.5rem!important; bottom:1.5rem!important;
+	background:rgba(0,0,0,0.5)!important; width:40%!important; 
+	left:4em!important; bottom:2em!important;
 }
 .post-slider .slide-post .entry-title{
-	font-size:1.5rem!important;
+	font-size:18px!important; margin-bottom:7px; display:block;
 }
 .post-slider .slide-post p{
-	font-size:13px; padding:0; margin:0; color:#eee;
+	font-size:13px; padding:0; margin:0; color:#dcdcdc;
 }
 .post-slider .slide-post a.more-link{
 	display:block; background:#418ed6; color:#eee; font-size:13px; 
-	width:100px; height:36px; text-align:center; line-height:36px;
-	border-radius:3px; margin-top:10px; font-family:microsoft yahei;
+	width:100px; height:36px; text-align:center; line-height:36px; font-weight:200;
+	border-radius:3px; margin-top:14px; font-family:microsoft yahei;
+}
+
+@media only screen and (max-width: 30em){
+	.post-slider .slide-post{
+		width:100%!important; left:0!important; bottom:0!important;
+	}
+	.post-slider .slide-post p{
+		font-size:12px;
+	}
+	.post-slider .slide-post a.more-link{
+		width:80px; height:25px; line-height:25px; font-size:12px;
+	}
+	.zeeflex-viewport{
+		height:auto;
+	}
+	.post-slider .zeeslide .slide-image{
+		width:auto!important; height:200px!important;
+	}
+}
+
+.ds-widget-recent-comments #ds-recent-comments li.ds-comment{
+	border-top:none 0; padding:6px 0 25px !important;
+}
+#ds-recent-comments li.ds-comment .ds-thread-title{
+	margin:4px 0 10px 0!important;
+}
+#ds-recent-comments li.ds-comment .ds-thread-title a{
+	color:#999;
+}
+#ds-recent-comments li.ds-comment a{
+	color:#333;
+}
+#ds-recent-comments li.ds-comment .ds-avatar img{
+	border:solid 1px #eee; width:44px!important; height:44px!important;
+}
+#ds-recent-comments li.ds-comment a,
+#ds-recent-comments li.ds-comment .ds-time,
+#ds-recent-comments li.ds-comment .ds-thread-title,
+#ds-recent-comments li.ds-comment .ds-thread-title a,
+#ds-recent-comments li.ds-comment .ds-excerpt{
+	font-size:13px;
+}
+#ds-recent-comments li.ds-comment .ds-meta{
+	padding-bottom:5px;
+}
+.ds-widget-recent-comments #ds-recent-comments li.ds-comment.ds-show-avatars{
+	padding-left:60px !important;
 }

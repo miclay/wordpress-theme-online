@@ -311,7 +311,7 @@ if ( ! function_exists( 'poseidon_more_link' ) ) :
 function poseidon_more_link() {
 	?>
 
-	<a href="<?php echo esc_url( get_permalink() ) ?>" class="more-link"><?php esc_html_e( 'Read more', 'poseidon' ); ?></a>
+	<a href="<?php echo esc_url( get_permalink() ) ?>" class="more-link">继续阅读</a>
 
 	<?php
 }
